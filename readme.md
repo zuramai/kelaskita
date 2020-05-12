@@ -41,6 +41,7 @@ Web Management Kelas yang dibuat oleh <a href="https://github.com/zuramai"> Ahma
 ------------
 
 ## 💻 Install
+
 1. **Clone Repository**
 ```bash
 git clone https://github.com/zuramai/kelaskita.git
@@ -49,6 +50,7 @@ composer install
 npm install
 copy .env.example .env
 ```
+
 2. **Buka ```.env``` lalu ubah baris berikut sesuai dengan databasemu yang ingin dipakai**
 ```
 DB_PORT=3306
@@ -56,13 +58,15 @@ DB_DATABASE=laravel
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+
 3. **Instalasi website**
 ```bash
+php artisan key:generate
 php artisan migrate
 php artisan db:seed
 php artisan storage:link
-php artisan config:cache
 ```
+
 4.** Jalankan website**
 ```bash
 php artisan serve
@@ -72,6 +76,7 @@ php artisan serve
 
 👤 <a href="https://www.facebook.com/ahmadsaugi.gis"> **Ahmad Saugi**</a>
 - Facebook : <a href="https://www.facebook.com/ahmadsaugi.gis"> Ahmad Saugi</a>
+- LinkedIn : <a href="https://www.linkedin.com/in/ahmad-saugi-a54a73192/"> Ahmad Saugi</a>
 
 ## 🤝 Contributing
 Contributions, issues and feature requests di persilahkan.
@@ -85,6 +90,6 @@ Jangan ragu untuk memeriksa halaman masalah jika Anda ingin berkontribusi. **Ber
 ------------
 
 - **Made with ❤️ by AhmadSaugi .**
-- Copyright © 2020 Syauqi Zaidan Khairan Khalaf.
+- Thanks to <a href="http://devover.id">DevoverID</a>
 - KelasKita is open-sourced software licensed under the MIT license.
 
