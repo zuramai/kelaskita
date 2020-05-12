@@ -1,3 +1,11 @@
+<!-- =========================================================================================
+  Name: KelasKita Website
+  Author: Ahmad Saugi
+  Author URL: http://ahmadsaugi.com
+  Repository: https://github.com/zuramai/kelaskita
+  Community: Devover ID
+  Community URL : http://devover.id
+========================================================================================== -->
             <!-- ========== Left Sidebar Start ========== -->
             <div class="left side-menu">
                 <div class="slimscroll-menu" id="remove-scroll">

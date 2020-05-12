@@ -1,3 +1,11 @@
+<!-- =========================================================================================
+  Name: KelasKita Website
+  Author: Ahmad Saugi
+  Author URL: http://ahmadsaugi.com
+  Repository: https://github.com/zuramai/kelaskita
+  Community: Devover ID
+  Community URL : http://devover.id
+========================================================================================== -->
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -17,7 +25,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::prefix('students')->group(function() {

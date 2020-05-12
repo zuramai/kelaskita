@@ -9,7 +9,7 @@
  @extends('layouts.app')
 
 @section('content')
-@section('title', 'Siswa')
+@section('title', 'Jadwal Piket')
 @push('styles')
     <style>.navbar {background-color: #fff} .nav-link {color: #777 !important} .nav-link:hover {color: #6814E1 !important}</style>
 @endpush
@@ -17,7 +17,7 @@
 <section class="students">
     <div class="container">
         <div class="section-header text-center">
-            <h1>Jadwal Pelajaran</h1>
+            <h1>Jadwal Piket</h1>
             <div class="divider mx-auto"></div>
         </div>
         <div class="section-body">
@@ -32,19 +32,17 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Mata Pelajaran</th>
-                                    <th>Jam</th>
+                                    <th>Nama Siswa</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach($day->schedules as $schedule)
+                                @foreach($day->pickets as $picket)
                                 <tr>
                                     <td>{{$loop->iteration}}</td>
-                                    <td>{{ $schedule->subject->name }}</td>
-                                    <td>{{ date('H:i', strtotime($schedule->start_time)) }} - {{ date('H:i', strtotime($schedule->end_time)) }}</td>
+                                    <td>{{ $picket->student->name }}</td>
                                 </tr>
                                 @endforeach
-                                @forelse ($day->schedules as $schedule)
+                                @forelse ($day->pickets as $picket)
                                 @empty
                                 <tr>
                                     <td colspan="3" class='text-center'>No Data</td>    

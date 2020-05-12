@@ -1,4 +1,11 @@
-@extends('layouts.app')
+<!-- =========================================================================================
+  Name: KelasKita Website
+  Author: Ahmad Saugi
+  Author URL: http://ahmadsaugi.com
+  Repository: https://github.com/zuramai/kelaskita
+  Community: Devover ID
+  Community URL : http://devover.id
+========================================================================================== -->@extends('layouts.app')
 
 @section('content')
 @section('title', 'Siswa')

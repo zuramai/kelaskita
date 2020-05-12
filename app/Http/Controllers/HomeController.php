@@ -55,4 +55,9 @@ class HomeController extends Controller
         $days = Day::orderBy('id','asc')->get();
         return view('jadwal-pelajaran', compact('days'));
     }
+
+    public function jadwal_piket() {
+        $days = Day::orderBy('id','asc')->get();
+        return view('jadwal-piket', compact('days'));
+    }
 }

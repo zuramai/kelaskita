@@ -11,4 +11,8 @@ class Day extends Model
     public function schedules() {
         return $this->hasMany('App\Models\Schedule','day_id');
     }
+
+    public function pickets() {
+        return $this->hasMany('App\Models\Picket', 'day_id');
+    }
 }

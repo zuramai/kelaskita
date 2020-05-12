@@ -1,4 +1,12 @@
-        <!-- jQuery  -->
+ <!-- =========================================================================================
+  Name: KelasKita Website
+  Author: Ahmad Saugi
+  Author URL: http://ahmadsaugi.com
+  Repository: https://github.com/zuramai/kelaskita
+  Community: Devover ID
+  Community URL : http://devover.id
+========================================================================================== -->
+       <!-- jQuery  -->
         <script src="{{ URL::asset('assets/js/jquery.min.js')}}"></script>
         <script src="{{ URL::asset('assets/js/bootstrap.bundle.min.js')}}"></script>
         <script src="{{ URL::asset('assets/js/metisMenu.min.js')}}"></script>
