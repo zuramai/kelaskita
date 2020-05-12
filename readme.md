@@ -13,10 +13,10 @@
 
 </p>
 
-### 🤔 Apa itu Learnify?
+### 🤔 Apa itu KelasKita?
 Web Management Kelas yang dibuat oleh <a href="https://github.com/zuramai"> Ahmad Saugi </a>. **KelasKita adalah Website untuk kelas agar para siswa dapat melihat jadwal pelajaran, jadwal piket, artikel, dan informasi lainnya melalui website dengan mudah.**
 
-### 🤨 Fitur apa saja yang tersedia di learnify?
+### 🤨 Fitur apa saja yang tersedia di KelasKita?
 - Autentikasi Admin
 - List Siswa & CRUD
 - User & CRUD
