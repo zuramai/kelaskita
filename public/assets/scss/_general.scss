@@ -1,0 +1,95 @@
+/* ==============
+  General
+===================*/
+
+body {
+  background-repeat: repeat;
+  background: $bg-body;
+  font-family: $font-family;
+  color: #5b626b;
+  font-size: $base-font;
+}
+
+html {
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+}
+
+p{
+  line-height: 1.7;
+}
+
+svg {
+  max-width: 100%;
+}
+
+a {
+  color: $muted;
+
+  &:hover {
+    outline: 0;
+    text-decoration: none;
+  }
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+
+.container-alt {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer {
+  bottom: 0;
+  text-align: center;
+  padding: 20px 30px;
+  position: absolute;
+  right: 0;
+  left: 240px;
+  background-color: darken($white,2%);
+  box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+#wrapper {
+  height: $height;
+  overflow: hidden;
+  width: $width;
+}
+
+// Slimscroll
+.slimScrollDiv {
+  height: auto !important;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: $primary;
+}
+
+/* Social */
+.social-links {
+  li {
+    a {
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      width: 30px;
+    }
+  }
+}
+

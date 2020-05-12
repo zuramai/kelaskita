@@ -1,0 +1,152 @@
+main {
+    min-height: 90vh;
+}
+.navbar {
+    height: 60px;
+}
+.navbar-toggler  {
+    border-color: white;
+}
+.navbar-toggler i {
+    color: white;
+}
+section:not(.hero) {
+    padding: 100px 0;
+}
+.section-header {
+    margin-bottom: 3rem;
+}
+.hero {
+    min-height: 80vh;
+    height: 600px;
+	background-position: center center;
+	background-size: cover;
+    margin-top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.nav-link {
+    transition: all .2s;
+    color: #ddd     !important;
+}
+.nav-link:hover {
+    color: #fff     !important;
+}
+.hero .hero-text {
+    color: #fff;
+}
+.hero .hero-text .text-title {
+    font-size: 3rem;
+}
+.hero .hero-text p {
+    color: #ccc
+}
+.divider {
+    width: 70px;
+    height: 3px;
+    background: linear-gradient(to right, rgba(74, 0, 224, .9), rgba(142, 45, 226,.9));
+}
+.students .card {
+    border:none;
+    border-radius: 5px;
+    transition: all .2s;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.students img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.students .student-name {
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: #555;
+}
+.students .student-description {
+    font-size: .7rem;
+    color: #777;
+    letter-spacing: 1px;
+}
+.students .card-student {
+}
+a {
+    transition: all .2s;
+}
+a:hover {
+    text-decoration: none;
+}
+.students .card-student:hover .card {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.student img {
+    width: 100%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.text-blue {
+    color: #6814E1;
+}
+.articles .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+.articles {
+    background-color: #fff;
+}
+.articles .card {
+    border:none;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.articles .card-body {
+}
+.articles .card-title {
+    font-size: 1.3rem;
+}
+.articles .card-title a {
+    color: #545454;
+}
+.articles .card-title a:hover {
+    color: #4299e1;
+}
+.articles .card-description {
+    font-size:.8rem;
+    color: #777
+}
+.card-footer {
+    background-color: #fff;
+    border: none;
+    font-size: 12px;
+    color: #666;
+}
+.card-footer span {
+    margin-left: 5px;
+}
+.card-detail {
+    background-color: #fff;
+    border: none;
+    font-size: .8rem;
+    color: #666;
+}
+.ml-10 {
+    margin-left: 3rem;
+}
+footer {
+    background-color: #545454;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 12px;
+}
+.article .card {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border:none
+}
+.article img{
+    width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .sm\:mt-5 {
+        margin-top: 15px;
+    }
+}

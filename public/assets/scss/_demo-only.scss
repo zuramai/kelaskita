@@ -1,0 +1,57 @@
+/* ==============
+ Demo Only css
+===================*/
+
+.button-items {
+  margin-bottom: -8px;
+
+  .btn {
+    margin-bottom: 8px;
+    margin-right: 5px;
+  }
+}
+
+.bs-example-modal {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block;
+}
+
+.icon-demo-content {
+  text-align: center;
+  color: $muted;
+
+  i{
+    display: block;
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .col-md-4 {
+    margin-bottom: 30px;
+
+    &:hover {
+      i {
+        color: $primary;
+      }
+    }
+  }
+}
+
+// blockquote
+
+.blockquote {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid $gray-200;
+}
+
+.blockquote-reverse {
+  border-left: 0;
+  border-right: 4px solid $gray-200;
+  text-align: right;
+}

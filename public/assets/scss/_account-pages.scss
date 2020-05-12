@@ -1,0 +1,33 @@
+/* ==============
+  Account Pages
+===================*/
+
+.wrapper-page {
+  margin: 5.5% auto;
+  max-width: 460px;
+  position: relative;
+
+  .logo-admin {
+    font-size: 28px;
+    line-height: 70px;
+  }
+}
+
+.user-thumb {
+  position: relative;
+  z-index: 999;
+  img {
+    height: 88px;
+    margin: 0 auto;
+    width: 88px;
+  }
+}
+
+.ex-page-content {
+  h1 {
+    font-size: 98px;
+    font-weight: 500;
+    line-height: 150px;
+    text-shadow: rgba(61, 61, 61, 0.3) 1px 1px, rgba(61, 61, 61, 0.2) 2px 2px, rgba(61, 61, 61, 0.3) 3px 3px;
+  }
+}

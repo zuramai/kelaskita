@@ -1,0 +1,20 @@
+
+
+// directory
+
+.directory-card{
+  overflow: hidden;
+  .directory-bg{
+    background-image: url("../images/directory-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+  }
+  .directory-overlay{
+    background-color: rgba($primary, 0.7);
+    padding: 20px;
+  }
+  img{
+    position: relative;
+    top: 60px;
+  }
+}

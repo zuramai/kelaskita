@@ -1,0 +1,70 @@
+/* ==============
+  Widgets
+===================*/
+
+.widget-chart li {
+    width: 31.5%;
+    display: inline-block;
+    padding: 0;
+    i {
+        font-size: 22px;
+    }
+}
+
+.mini-stat {
+    border: none;
+    .mini-stat-img {
+        background: url(../images/bg-1.png);
+        background-size: cover;
+    }
+    .mini-stat-icon {
+        i {
+            font-size: 30px;
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            text-align: center;
+            color: $white !important;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+        }
+    }
+}
+
+// inbox widget
+.inbox-wid {
+    .inbox-item {
+        position: relative;
+        border-bottom: 1px solid rgba(243, 243, 243, 0.9);
+        overflow: hidden;
+        padding: 10px 0;
+        
+        .inbox-item-date {
+            font-size: 11px;
+            position: absolute;
+            right: 7px;
+            top: 8px;
+        }
+    }
+}
+
+.widget-user {
+    overflow: hidden;
+    .widget-user-desc {
+        &::after {
+            left: 18px;
+            bottom: -20px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-top-color: $primary;
+            border-width: 10px;
+            margin-left: -1px;
+            border-right-color: $primary;
+        }
+    }
+}
