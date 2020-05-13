@@ -5,12 +5,14 @@
   Repository: https://github.com/zuramai/kelaskita
   Community: Devover ID
   Community URL : http://devover.id
-========================================================================================== -->@extends('layouts.app')
+========================================================================================== -->
+
+@extends('layouts.app')
 
 @section('content')
 @section('title', 'Siswa')
 @push('styles')
-    <style>.navbar {background-color: #fff} .nav-link {color: #777 !important} .nav-link:hover {color: #6814E1 !important}</style>
+    <link rel="stylesheet" href="{{asset('css/landing.css')}}">
 @endpush
 
 <section class="students">

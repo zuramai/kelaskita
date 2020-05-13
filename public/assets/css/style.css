@@ -644,6 +644,9 @@ dt {
 .topbar .topbar-left .logo {
   line-height: 70px;
 }
+.enlarged .logo {
+  display: none;
+}
 
 .topbar .topbar-left .logo i {
   display: none;
@@ -3441,9 +3444,9 @@ Invoice
   body {
     overflow-x: hidden;
   }
-  .topbar-left {
+  /* .topbar-left {
     width: 70px !important;
-  }
+  } */
   .topbar-left span {
     display: none !important;
   }

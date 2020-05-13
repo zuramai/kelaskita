@@ -149,4 +149,20 @@ footer {
     .sm\:mt-5 {
         margin-top: 15px;
     }
+    .navbar-collapse {
+        position: absolute;
+        top: 60px;
+        width: 100%;
+        z-index: 999;
+        left: 0px;
+        padding: 0px 30px;
+        background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    }
+    .navbar-collapse .nav-link {
+        transition: all .2s;
+        color: #444 !important;    
+    }
+    .navbar-collapse .nav-link:hover {
+        margin-left: 10px;
+    }
 }
