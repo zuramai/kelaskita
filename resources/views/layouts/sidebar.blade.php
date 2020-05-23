@@ -27,6 +27,12 @@
                                 <a href="{{route('admin.students.index')}}" class="waves-effect"><i class="fas fa-user-circle"></i><span> Siswa </span></a>
                             </li>
                             <li>
+                                <a href="{{route('admin.absen.index')}}" class="waves-effect"><i class="mdi mdi-calendar-check"></i><span> Absen Siswa </span></a>
+                            </li>
+                            <li>
+                                <a href="{{route('admin.absen.report')}}" class="waves-effect"><i class="mdi mdi-file-document"></i><span> Laporan Absen Siswa </span></a>
+                            </li>
+                            <li>
                                 <a href="{{route('admin.subjects.index')}}" class="waves-effect"><i class="mdi mdi-file-outline"></i><span> Mata Pelajaran </span></a>
                             </li>
                             <li>
