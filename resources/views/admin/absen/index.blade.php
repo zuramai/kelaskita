@@ -39,18 +39,6 @@
         
                                         <h4 class="mt-0 header-title">Seluruh Siswa</h4>
                                         <p class="text-muted m-b-30 font-14">Berikut adalah daftar seluruh siswa</p>
-                                        
-                                        <div class="row mb-3">
-                                            {{-- <div class="col-md-4">
-                                                <form action="" class="form-inline">
-                                                    <input type="text" class="form-control mr-2" placeholder="Cari Data" name='search'>
-                                                    <button type="submit" class='btn btn-primary'>Cari</button>
-                                                </form>
-                                            </div> --}}
-                                            {{-- <div class="col-md-2 ml-auto">
-                                                <a class="btn btn-primary float-right" href="{{ route('admin.students.create') }}">Tambah</a>
-                                            </div> --}}
-                                        </div>
                                         @if(session('sudahAda'))
                                             <div class="alert alert-danger">{{ session('sudahAda') }}</div>
                                         @endif
@@ -91,22 +79,22 @@
                                                                     <div class="row">
                                                                         <div class="col-md-3">
                                                                             <label for="">Hadir</label>
-                                                                            <input type="checkbox" name="hadir[]" value="{{$student->name}}">
+                                                                            <input type="checkbox" name="hadir[]" value="{{$student->id}}">
                                                                         </div>  
                                                                         
                                                                         <div class="col-md-3">
                                                                             <label for="">Sakit</label>
-                                                                            <input type="checkbox" name="sakit[]" value="{{$student->name}}">
+                                                                            <input type="checkbox" name="sakit[]" value="{{$student->id}}">
                                                                         </div>  
 
                                                                         <div class="col-md-3">
                                                                             <label for="">Izin</label>
-                                                                            <input type="checkbox" name="izin[]" value="{{$student->name}}">
+                                                                            <input type="checkbox" name="izin[]" value="{{$student->id}}">
                                                                         </div> 
                                                                         
                                                                         <div class="col-md-3">
                                                                             <label for="">Alfa</label>
-                                                                            <input type="checkbox" name="alfa[]" value="{{$student->name}}">
+                                                                            <input type="checkbox" name="alfa[]" value="{{$student->id}}">
                                                                         </div> 
 
                                                                     </div>    

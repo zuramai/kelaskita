@@ -15,6 +15,7 @@ class AbsenController extends Controller
     }
 
     public function store(Request $request) {
+        // dd(request()->all());
        $hadir = request('hadir');
     //    dd($hadir);
        $sakit = request('sakit');
@@ -26,14 +27,14 @@ class AbsenController extends Controller
        }
        else {
            foreach ($hadir as $hdr) {
-               $count = Absen::get()->where('name', $hdr)->where('tgl_absen', date('d F Y'));
+               $count = Absen::get()->where('student_id', $hdr)->where('tgl_absen', date('d F Y'));
                if (count($count) > 0) {
                    session()->flash('sudahAda', 'Absen Hari Ini Untuk Murid Ini Telah Dilakukan');
                }
     
                else {
                 Absen::create([
-                    "name" => $hdr,
+                    "student_id" => $hdr,
                     "keterangan" => "Hadir",
                     "tgl_absen" => date('d F Y'),
                 ]);
@@ -46,13 +47,13 @@ class AbsenController extends Controller
         }
         else {
             foreach ($sakit as $skt) {
-                $count = Absen::get()->where('name', $skt)->where('tgl_absen', date('d F Y'));
+                $count = Absen::get()->where('student_id', $skt)->where('tgl_absen', date('d F Y'));
                     if (count($count) > 0) {
                         session()->flash('sudahAda', 'Absen Hari Ini Untuk Murid Ini Telah Dilakukan');
                     }
                     else {
                         Absen::create([
-                        "name" => $skt,
+                        "student_id" => $skt,
                         "keterangan" => "Sakit",
                             "tgl_absen" => date('d F Y'),
                         ]);
@@ -66,13 +67,13 @@ class AbsenController extends Controller
         
         else {
             foreach ($izin as $izn) {
-                $count = Absen::get()->where('name', $izn)->where('tgl_absen', date('d F Y'));
+                $count = Absen::get()->where('student_id', $izn)->where('tgl_absen', date('d F Y'));
                 if (count($count) > 0) {
                     session()->flash('sudahAda', 'Absen Hari Ini Untuk Murid Ini Telah Dilakukan');
                 }
                 else {
                     Absen::create([
-                        "name" => $izn,
+                        "student_id" => $izn,
                         "keterangan" => "Izin",
                         "tgl_absen" => date('d F Y'),
                     ]);
@@ -85,13 +86,13 @@ class AbsenController extends Controller
         }
         else {
             foreach ($alfa as $alf) {
-                $count = Absen::get()->where('name', $alf)->where('tgl_absen', date('d F Y'));
+                $count = Absen::get()->where('student_id', $alf)->where('tgl_absen', date('d F Y'));
                     if (count($count) > 0) {
                         session()->flash('sudahAda', 'Absen Hari Ini Untuk Murid Ini Telah Dilakukan');
                     }
                     else {
                         Absen::create([
-                            "name" => $alf,
+                            "student_id" => $alf,
                             "keterangan" => "Alfa",
                             "tgl_absen" => date('d F Y'),
                     ]);

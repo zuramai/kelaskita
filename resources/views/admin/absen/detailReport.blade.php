@@ -55,7 +55,7 @@
                                                     @foreach($details as $detail)
                                                         <tr>
                                                             <th scope="row">{{ $loop->iteration }}</th>
-                                                            <td>{{ $detail->name }}</td>
+                                                            <td>{{ $detail->students->name }}</td>
                                                             <td>{{$detail->keterangan}}</td>
                                                             <td>{{$detail->tgl_absen}}</td>
                                                         </tr>

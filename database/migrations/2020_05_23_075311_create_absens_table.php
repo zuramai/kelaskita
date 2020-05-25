@@ -15,7 +15,7 @@ class CreateAbsensTable extends Migration
     {
         Schema::create('absens', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->integer('student_id');
             $table->string('keterangan');
             $table->string('tgl_absen');
             $table->timestamps();

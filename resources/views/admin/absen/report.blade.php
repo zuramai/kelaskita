@@ -56,7 +56,7 @@
                                                     @foreach($absens as $absen)
                                                         <tr>
                                                             <th scope="row">{{ $loop->iteration }}</th>
-                                                            <td>{{ $absen->name }}</td>
+                                                            <td>{{ $absen->students->name }}</td>
                                                             <td>{{$absen->keterangan}}</td>
                                                             <td>{{$absen->tgl_absen}}</td>
                                                         </tr>
