@@ -67,7 +67,7 @@ php artisan db:seed
 php artisan storage:link
 ```
 
-4.** Jalankan website**
+4. **Jalankan website**
 ```bash
 php artisan serve
 ```
