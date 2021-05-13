@@ -9,8 +9,4 @@ class Student extends Model
     protected $table = 'students';
     protected $fillable = ['name', 'description'];
     
-    public function absen() {
-        return $this->hasMany(Absen::class,'student_id');
-    }
-
 }

@@ -4,10 +4,10 @@
   Author URL: http://ahmadsaugi.com
   Repository: https://github.com/zuramai/kelaskita
   Community: Devover ID
+  Community URL : http://devover.id
 ========================================================================================== -->
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,11 +47,5 @@ Route::group(['namespace' => 'Admin',  'prefix' => 'admin', 'middleware' => 'aut
         Route::resource('/articles', 'ArticleController');
         Route::get('/settings', 'SettingController@index')->name('settings.index');
         Route::put('/settings', 'SettingController@update')->name('settings.update');
-        Route::get('/absen', 'AbsenController@index')->name('absen.index');
-        Route::post('/absen-store', 'AbsenController@store')->name('absen.store');
-        Route::get('/absen-report', 'AbsenController@report')->name('absen.report');
-        Route::get('/detail-absen-report', 'AbsenController@detailAbsen')->name('detail.absen.report');
     });
-
-
 });
