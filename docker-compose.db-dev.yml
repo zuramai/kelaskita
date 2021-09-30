@@ -1,0 +1,32 @@
+version: '3.1'
+
+services:
+  db:
+    image: mysql:5.7.35
+    environment:
+      # After database deployed in dev environment, re-setup
+      # root password for KelasKita application.
+      MYSQL_ROOT_PASSWORD: rootpw
+      MYSQL_DATABASE: kelaskita
+    volumes:
+      - kelaskita-db-data:/var/lib/mysql
+
+  cache:
+    image: redis:6.2.5
+    command: redis-server
+
+  # Remote Database via GUI
+  adminer:
+    image: adminer
+    ports:
+      - 8090:8080
+
+networks:
+  default:
+    external: true
+    name: kelaskita
+
+# Keep mysql database and configuration persistent
+# Stored in /var/lib/docker/volumes/<volume-name>
+volumes:
+  kelaskita-db-data:
