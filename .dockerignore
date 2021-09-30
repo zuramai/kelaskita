@@ -1,0 +1,14 @@
+.dockerignore
+.editorconfig
+.env
+.git
+.gitattributes
+.gitignore
+.styleci.yml
+Dockerfile
+docker-compose*
+.env
+.env.example
+LICENSE
+*.md
+tests/
