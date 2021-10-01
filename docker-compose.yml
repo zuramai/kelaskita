@@ -1,0 +1,33 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kelaskita
+    container_name: kelaskita-app
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./public:/var/www/public
+      - ./storage:/var/www/storage
+      - ./.env:/var/www/.env
+
+  web:
+    image: nginx:1.21.3
+    container_name: kelaskita-web
+    restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - ./public:/var/www/public
+      - ./storage:/var/www/storage
+      - ./docker-compose/nginx:/etc/nginx/conf.d
+    depends_on:
+      - app
+
+networks:
+  default:
+    external: true
+    name: kelaskita
