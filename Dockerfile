@@ -18,7 +18,7 @@ COPY --from=deps-js /app /var/www
 COPY . /var/www
 
 RUN apt-get update && apt-get install -y \
-    git curl \
+    curl \
     libpng-dev libonig-dev libxml2-dev \
     zip unzip
 
