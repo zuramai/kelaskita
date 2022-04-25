@@ -17,7 +17,7 @@ class SettingSeeder extends Seeder
             ['key' => 'WEB_LOGO_WHITE', 'value' => 'logo_white.png'],
             ['key' => 'WEB_LOGO', 'value' => 'logo.png'],
             ['key' => 'WEB_FAVICON', 'value' => 'favicon.png'],
-            ['key' => 'HERO_TEXT_HEADER', 'value' => 'Selamat Datang di KelasKita'],
+            ['key' => 'HERO_TEXT_HEADER', 'value' => 'Selamat Datang di'],
             ['key' => 'HERO_TEXT_DESCRIPTION', 'value' => 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas deserunt, tenetur fuga fugiat quisquam recusandae quo sit eligendi nostrum. Maxime illo possimus necessitatibus natus totam.'],
             ['key' => 'HERO_BACKGROUND_IMAGE', 'value' => 'bersama2.jpg'],
         ]);
