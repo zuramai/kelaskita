@@ -52,7 +52,7 @@
                 @endforeach
             </div>
             <div class='text-right mt-5'>
-                <a href="{{ route('student.index') }}" >Lihat Selengkapnya <i class='mdi mdi-chevron-right'></i></a>
+                <a href="{{ route('student.index') }}" >Lihat Selengkapnya <i class='bi bi-chevron-right'></i></a>
             </div>
         </div>
     </div>
@@ -83,7 +83,7 @@
                 @endforeach
             </div>
             <div class='text-right mt-3'>
-                <a href="{{ route('article.index') }}">Lihat Semua Artikel <i class="mdi mdi-chevron-right"></i></a>
+                <a href="{{ route('article.index') }}">Lihat Semua Artikel <i class="bi bi-chevron-right"></i></a>
             </div>
         </div>
     </div>

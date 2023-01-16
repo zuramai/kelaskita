@@ -50,18 +50,16 @@
 
                             <div class="form-group m-t-10 mb-0 row">
                                 <div class="col-12 m-t-20">
-                                    <a href="{{route('password.request')}}" class="text-muted"><i class="mdi mdi-lock"></i> Forgot your password?</a>
+                                    <a href="{{route('password.request')}}" class="text-muted"><i class="bi bi-lock"></i> Forgot your password?</a>
                                 </div>
                             </div>
                         </form>
                     </div>
-
                 </div>
             </div>
 
-
             <div class="m-t-40 text-center">
-                <p>© {{date('Y')}} {{config('web_config')['WEB_TITLE']}}. Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://www.facebook.com/ahmadsaugi.gis">Ahmad Saugi</a></p>
+                <p>© {{date('Y')}} {{config('web_config')['WEB_TITLE']}}. Crafted with <i class="bi bi-heart text-danger"></i> by <a href="https://www.facebook.com/ahmadsaugi.gis">Ahmad Saugi</a></p>
             </div>
 
         </div>

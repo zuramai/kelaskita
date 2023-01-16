@@ -37,7 +37,7 @@
                     <img src="@yield('logo', Storage::url('/images/logo/'.config('web_config')['WEB_LOGO']))" alt="Logo" height="30">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <i class="mdi mdi-menu"></i>
+                    <i class="bi bi-list"></i>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -87,7 +87,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">Copyright &copy; {{ date('Y') }} {{config('web_config')['WEB_TITLE']}} </div>
-                    <div class="col-6 text-right">Made with <i class="mdi mdi-heart text-danger"></i> by <a href="https://www.facebook.com/ahmadsaugi.gis">Ahmad Saugi</a></div>
+                    <div class="col-6 text-right">Made with <i class="bi bi-heart text-danger"></i> by <a href="https://www.facebook.com/ahmadsaugi.gis">Ahmad Saugi</a></div>
                 </div>
             </div>
         </footer>
