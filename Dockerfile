@@ -1,17 +1,17 @@
-FROM composer:2.1.8 AS deps-php
+FROM composer:2.2.6 AS deps-php
 WORKDIR /app
 COPY composer.* /app/
 COPY database/ /app/database/
 RUN composer install --no-scripts --optimize-autoloader --ignore-platform-reqs --prefer-install=dist
 
 
-FROM node:14.18 AS deps-js
+FROM node:latest AS deps-js
 WORKDIR /app
 COPY package*.json /app/
 RUN npm ci --unsafe-perm
 
 
-FROM php:7.4-fpm
+FROM php:8-fpm
 WORKDIR /var/www
 COPY --from=deps-php /app /var/www
 COPY --from=deps-js /app /var/www
@@ -30,3 +30,5 @@ RUN apt-get clean \
 
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 USER app
+
+RUN php artisan storage:link
