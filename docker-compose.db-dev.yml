@@ -6,7 +6,7 @@ services:
     environment:
       # After database deployed in dev environment, re-setup
       # root password for KelasKita application.
-      MYSQL_ROOT_PASSWORD: rootpw
+      MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: kelaskita
     volumes:
       - kelaskita-db-data:/var/lib/mysql
