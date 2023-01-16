@@ -1,9 +1,4 @@
-<!-- =========================================================================================
-  Name: KelasKita Website
-  Author: Ahmad Saugi
-  Author URL: http://ahmadsaugi.com
-  Repository: https://github.com/zuramai/kelaskita
-========================================================================================== -->
+
 <!DOCTYPE html>
 <html lang="en">
 

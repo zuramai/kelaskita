@@ -1,9 +1,4 @@
-<!-- =========================================================================================
-  Name: KelasKita Website
-  Author: Ahmad Saugi
-  Author URL: http://ahmadsaugi.com
-  Repository: https://github.com/zuramai/kelaskita
-========================================================================================== -->
+
 		<meta content="Admin Dashboard" name="description" />
         <meta content="Ahmad Saugi" name="author" />
         <link rel="shortcut icon" href="{{ URL::asset('assets/images/favicon.ico')}}">
