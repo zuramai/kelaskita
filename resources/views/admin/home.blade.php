@@ -21,8 +21,8 @@
                                     <i class="mdi mdi-cube-outline float-right"></i>
                                 </div>
                                 <div class="text-white">
-                                    <h6 class="text-uppercase mb-3">Total Siswa</h6>
-                                    <h4 class="mb-4">{{$count['student']}}</h4>
+                                    <h6 class="text-white text-uppercase mb-3">Total Siswa</h6>
+                                    <h4 class="text-white mb-4">{{$count['student']}}</h4>
                                 </div>
                             </div>
                         </div>
@@ -34,8 +34,8 @@
                                     <i class="mdi mdi-buffer float-right"></i>
                                 </div>
                                 <div class="text-white">
-                                    <h6 class="text-uppercase mb-3">Total Mata Pelajaran</h6>
-                                    <h4 class="mb-4">{{$count['subject']}}</h4>
+                                    <h6 class="text-white text-uppercase mb-3">Total Mata Pelajaran</h6>
+                                    <h4 class="text-white mb-4">{{$count['subject']}}</h4>
                                 </div>
                             </div>
                         </div>
@@ -47,8 +47,8 @@
                                     <i class="mdi mdi-account float-right"></i>
                                 </div>
                                 <div class="text-white">
-                                    <h6 class="text-uppercase mb-3">Total Pengguna</h6>
-                                    <h4 class="mb-4">{{$count['users']}}</h4>
+                                    <h6 class="text-white text-uppercase mb-3">Total Pengguna</h6>
+                                    <h4 class="text-white mb-4">{{$count['users']}}</h4>
                                 </div>
                             </div>
                         </div>
@@ -60,8 +60,8 @@
                                     <i class="mdi mdi-file float-right"></i>
                                 </div>
                                 <div class="text-white">
-                                    <h6 class="text-uppercase mb-3">Total Artikel</h6>
-                                    <h4 class="mb-4">{{$count['article']}}</h4>
+                                    <h6 class="text-white text-uppercase mb-3">Total Artikel</h6>
+                                    <h4 class="text-white mb-4">{{$count['article']}}</h4>
                                 </div>
                             </div>
                         </div>
