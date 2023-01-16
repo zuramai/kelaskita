@@ -15,11 +15,16 @@
 
                     <div class="p-3">
                         <h4 class="text-muted font-18 mb-3 text-center">Reset Password</h4>
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @else
                         <div class="alert alert-info" role="alert">
                             Masukkan email anda untuk menerima permintaan reset password.
                         </div>
-
-                        <form class="form-horizontal m-t-30" >
+                        @endif
+                        <form class="form-horizontal m-t-30" method="POST" action="{{ route('password.email') }}">
                             @csrf
                             <div class="form-group">
                                 <label for="useremail">Email</label>
@@ -45,7 +50,7 @@
             </div>
 
             <div class="m-t-40 text-center">
-                <p>Remember It ? <a href="pages-login" class="font-500 font-14 text-primary font-secondary"> Sign In Here </a> </p>
+                <p>Remember It ? <a href="{{ route('login') }}" class="font-500 font-14 text-primary font-secondary"> Sign In Here </a> </p>
                 <p>© {{date('Y')}} {{config('web_config')['WEB_TITLE']}}. Crafted with <i class="bi bi-heart text-danger"></i> by <a href="https://www.facebook.com/ahmadsaugi.gis">Ahmad Saugi</a></p>
             </div>
 

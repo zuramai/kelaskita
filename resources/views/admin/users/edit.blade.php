@@ -62,6 +62,17 @@
                                                 </div>
                                             </div>
                                             <div class="form-group row">
+                                                <label for="" class='col-md-2 col-form-label'>Email</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" name="email" class="form-control @error('email') is-invalid @enderror" value="{{ $user->email }}">
+                                                    @error('email')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
                                                 <label for="" class='col-md-2 col-form-label'>Password</label>
                                                 <div class="col-md-10">
                                                     <input type="text" name="password" class='form-control @error('password') is-invalid @enderror' placeholder="Isi jika ingin diubah">

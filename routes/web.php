@@ -41,3 +41,6 @@ Route::group(['namespace' => 'Admin',  'prefix' => 'admin', 'middleware' => 'aut
         Route::put('/settings', 'SettingController@update')->name('settings.update');
     });
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

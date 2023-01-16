@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\User;
-use Hash;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -43,13 +43,15 @@ class UserController extends Controller
         $request->validate([
             'name' => 'required',
             'username' => 'required|unique:users',
-            'password' => 'required'
+            'password' => 'required',
+            'email' => 'required|email'
         ]);
 
         $create = User::create([
             'name' => $request->name,
             'username' => $request->username,
-            'password' => Hash::make($request->password)
+            'password' => Hash::make($request->password),
+            'email' => $request->email
         ]);
 
         session()->flash('success',"Sukses tambah data user $request->name");
@@ -90,14 +92,16 @@ class UserController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'username' => 'required|unique:users',
-            'password' => 'nullable'
+            'username' => 'required',
+            'password' => 'nullable',
+            'email' => 'required|email'
         ]);
 
         $create = User::find($id)->update([
             'name' => $request->name,
             'username' => $request->username,
-            'password' => Hash::make($request->password)
+            'password' => Hash::make($request->password),
+            'email' => $request->email
         ]);
 
         session()->flash('success',"Sukses ubah data user $request->name");
