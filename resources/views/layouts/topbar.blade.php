@@ -4,51 +4,43 @@
   Author URL: http://ahmadsaugi.com
   Repository: https://github.com/zuramai/kelaskita
 ========================================================================================== -->
-           <!-- Top Bar Start -->
-            <div class="topbar">
+<header>
+    <nav class="navbar navbar-expand navbar-light navbar-top">
+        <div class="container-fluid">
+            <a href="#" class="burger-btn d-block">
+                <i class="bi bi-justify fs-3"></i>
+            </a>
 
-                <!-- LOGO -->
-                <div class="topbar-left">
-                    <a href="{{ route('home') }}" class="logo">
-                        <img src="{{ Storage::url('/images/logo/'.config('web_config')['WEB_LOGO_WHITE'])}}" alt="" height="30">
-                    </a>
-                </div>
-
-                <nav class="navbar-custom">
-
-                    <ul class="navbar-right d-flex list-inline float-right mb-0">
-                       
-
-                        <li class="dropdown notification-list">
-                            <div class="dropdown notification-list nav-pro-img">
-                                <a class="dropdown-toggle nav-link arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                    <img src="{{asset('assets/images/users/user-4.jpg')}}" alt="user" class="rounded-circle">
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
-                                    <!-- item-->
-                                        <a class="dropdown-item text-danger" href="{{ route('logout') }}"
-                                                    onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"><i class="mdi mdi-power text-danger"></i> Logout</a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            @csrf
-                                        </form>
-                                </div>                                                                    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="ml-auto"></div>
+                <div class="dropdown">
+                    <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="user-menu d-flex">
+                            <div class="user-name text-end me-3">
+                                <h6 class="mb-0 text-gray-600">{{ Auth::user()->name }}</h6>
+                                <p class="mb-0 text-sm text-gray-600">Administrator</p>
                             </div>
+                            <div class="user-img d-flex align-items-center">
+                                <div class="avatar avatar-md">A</div>
+                            </div>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="min-width: 11rem;">
+                        <li>
+                            <h6 class="dropdown-header">Hello, {{ Auth::user()->name }}!</h6>
                         </li>
-
-                    </ul>
-
-                    <ul class="list-inline menu-left mb-0">
-                        <li class="float-left">
-                            <button class="button-menu-mobile open-left waves-effect">
-                                <i class="mdi mdi-menu"></i>
-                            </button>
+                            <hr class="dropdown-divider">
                         </li>
-                      
+                        <li><a class="dropdown-item" href="#"><i
+                                    class="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
                     </ul>
-
-                </nav>
-
+                </div>
             </div>
-            <!-- Top Bar End -->
+        </div>
+    </nav>
+</header>

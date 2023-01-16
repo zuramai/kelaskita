@@ -80,11 +80,11 @@
                                                             <td>{{ $schedule->end_time }}</td>
                                                             <td>
                                                                 <div class='d-inline-flex'>
-                                                                    <a href="{{ route('admin.schedules.edit', ['schedule' => $schedule->id]) }}" class='btn btn-warning mr-2'><i class="fas fa-edit"></i></a>
+                                                                    <a href="{{ route('admin.schedules.edit', ['schedule' => $schedule->id]) }}" class='btn btn-warning mr-2'><i class="bi bi-pencil-fill"></i></a>
                                                                     <form action="{{ route('admin.schedules.destroy', ['schedule' => $schedule->id]) }}" method="post">
                                                                         @csrf
                                                                         @method('delete')
-                                                                        <button type="button" class='btn btn-danger btn-delete'><i class="fas fa-trash"></i></button>
+                                                                        <button type="button" class='btn btn-danger btn-delete'><i class="bi bi-trash"></i></button>
                                                                     </form>
                                                                 </div>
                                                             </td>

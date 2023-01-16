@@ -6,6 +6,15 @@
 ========================================================================================== -->
 
 
-        <footer class="footer">
-                © {{date('Y')}} {{config('web_config')['WEB_TITLE']}}<span class="d-none d-sm-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://www.facebook.com/ahmadsaugi.gis">Ahmad Saugi</a></span>.
-        </footer>
+
+<footer>
+  <div class="footer clearfix mb-0 text-muted">
+    <div class="float-start">
+      <p>{{date('Y')}} &copy; Kelaskita</p>
+    </div>
+    <div class="float-end">
+      <p>Crafted with <span class="text-danger"><i class="bi bi-heart-fill icon-mid"></i></span>
+        by <a href="https://saugi.me">Saugi</a></p>
+    </div>
+  </div>
+</footer>

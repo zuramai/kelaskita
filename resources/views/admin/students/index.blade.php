@@ -72,11 +72,11 @@
                                                             <td>{{substr($student->description,0,50)}}..</td>
                                                             <td>
                                                                 <div class='d-inline-flex'>
-                                                                    <a href="{{ route('admin.students.edit', ['student' => $student->id]) }}" class='btn btn-warning mr-2'><i class="fas fa-edit"></i></a>
+                                                                    <a href="{{ route('admin.students.edit', ['student' => $student->id]) }}" class='btn btn-warning mr-2'><i class="bi bi-pencil-fill"></i></a>
                                                                     <form action="{{ route('admin.students.destroy', ['student' => $student->id]) }}" method="post">
                                                                         @csrf
                                                                         @method('delete')
-                                                                        <button type="button" class='btn btn-danger btn-delete'><i class="fas fa-trash"></i></button>
+                                                                        <button type="button" class='btn btn-danger btn-delete'><i class="bi bi-trash"></i></button>
                                                                     </form>
                                                                 </div>
                                                             </td>
