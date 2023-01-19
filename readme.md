@@ -74,8 +74,8 @@ php artisan serve
 
 ## 🧑 Author
 
-👤 <a href="https://www.facebook.com/ahmadsaugi.gis"> **Ahmad Saugi**</a>
-- Facebook : <a href="https://www.facebook.com/ahmadsaugi.gis"> Ahmad Saugi</a>
+👤 <a href="https://saugi.me"> **Ahmad Saugi**</a>
+- Facebook : <a href="https://saugi.me"> Ahmad Saugi</a>
 - LinkedIn : <a href="https://www.linkedin.com/in/ahmad-saugi-a54a73192/"> Ahmad Saugi</a>
 
 ## 🤝 Contributing

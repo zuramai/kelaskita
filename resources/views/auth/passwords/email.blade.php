@@ -51,7 +51,7 @@
 
             <div class="m-t-40 text-center">
                 <p>Remember It ? <a href="{{ route('login') }}" class="font-500 font-14 text-primary font-secondary"> Sign In Here </a> </p>
-                <p>© {{date('Y')}} {{config('web_config')['WEB_TITLE']}}. Crafted with <i class="bi bi-heart text-danger"></i> by <a href="https://www.facebook.com/ahmadsaugi.gis">Ahmad Saugi</a></p>
+                <p>© {{date('Y')}} {{config('web_config')['WEB_TITLE']}}. Crafted with <i class="bi bi-heart text-danger"></i> by <a href="https://saugi.me">Ahmad Saugi</a></p>
             </div>
 
         </div>

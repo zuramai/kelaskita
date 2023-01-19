@@ -22,6 +22,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('css/front.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/icons.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     @stack('styles')
 </head>
 <body>
@@ -82,7 +83,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6">Copyright &copy; {{ date('Y') }} {{config('web_config')['WEB_TITLE']}} </div>
-                    <div class="col-6 text-right">Made with <i class="bi bi-heart text-danger"></i> by <a href="https://www.facebook.com/ahmadsaugi.gis">Ahmad Saugi</a></div>
+                    <div class="col-6 text-right">Made with <span class="bi bi-heart"></span> by <a href="https://saugi.me">Ahmad Saugi</a></div>
                 </div>
             </div>
         </footer>
