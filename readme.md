@@ -26,11 +26,6 @@ Web Management Kelas yang dibuat oleh <a href="https://github.com/zuramai"> Ahma
 - Artikel
 - Dan lain-lain
 
-### 📆 <a href="http://syauqi.js.org/">Release Date</a>
-**Release date : 12 May 2020**
-> KelasKita merupakan project open source yang dibuat oleh ahmad saugi. Kalian dapat download/fork/clone. Cukup beri stars di project ini agar memberiku semangat. Terima kasih!
-
-------------
 
  ### 👤 Default Account for testing
 	
@@ -72,11 +67,6 @@ php artisan storage:link
 php artisan serve
 ```
 
-## 🧑 Author
-
-👤 <a href="https://saugi.me"> **Ahmad Saugi**</a>
-- Facebook : <a href="https://saugi.me"> Ahmad Saugi</a>
-- LinkedIn : <a href="https://www.linkedin.com/in/ahmad-saugi-a54a73192/"> Ahmad Saugi</a>
 
 ## 🤝 Contributing
 Contributions, issues and feature requests di persilahkan.
@@ -84,12 +74,10 @@ Jangan ragu untuk memeriksa halaman masalah jika Anda ingin berkontribusi. **Ber
 
 
 ## 📝 License
-- Copyright © 2020 Ahmad Saugi.
 - **KelasKita is open-sourced software licensed under the MIT license.**
 
 ------------
 
-- **Made with ❤️ by AhmadSaugi .**
-- Thanks to <a href="http://devover.id">DevoverID</a>
+- Thanks to <a href="https://devover.or.id">DevoverID</a>
 - KelasKita is open-sourced software licensed under the MIT license.
 
