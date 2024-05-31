@@ -13,6 +13,22 @@
 
 </p>
 
+
+<table>
+	<tr>
+		<th>Sponsored by</th>
+	</tr>
+	<tr>
+		<td>
+		<p align="center">
+			<a href="https://lokal.so/?ref=zuramai">
+				<img src="https://github.com/zuramai/zuramai/blob/master/sponsors/lokalso.png?raw=true"  width="50%">
+			</a>
+		</p>	
+		</td>
+	</tr>
+</table>
+
 ### 🤔 Apa itu KelasKita?
 Web Management Kelas yang dibuat oleh <a href="https://github.com/zuramai"> Ahmad Saugi </a>. **KelasKita adalah Website untuk kelas agar para siswa dapat melihat jadwal pelajaran, jadwal piket, artikel, dan informasi lainnya melalui website dengan mudah.**
 
